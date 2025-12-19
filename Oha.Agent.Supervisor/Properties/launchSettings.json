@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Oha.Agent.Supervisor": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "Logging__LogLevel__Default": "Trace",
+        "OPENAI_API_KEY": "<>",
+        "GROQ_API_KEY": "<>"
+      }
+    }
+  }
+}

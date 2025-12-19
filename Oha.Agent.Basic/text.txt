@@ -1,0 +1,25 @@
+Título: Implementação de Autenticação via OAuth 2.0
+Descrição:
+Atualmente, o sistema permite apenas autenticação via login e senha. Para oferecer mais segurança e facilidade de acesso, será implementada a autenticação via OAuth 2.0, permitindo login com contas de terceiros, como Google e Microsoft.
+
+Objetivo:
+Permitir que os usuários realizem login utilizando provedores de identidade OAuth 2.0.
+Melhorar a segurança do processo de autenticação.
+Reduzir a necessidade de gerenciamento de credenciais.
+Requisitos:
+Implementar o fluxo de autenticação OAuth 2.0 com suporte a Google e Microsoft.
+Adicionar um botão de login social na tela de autenticação.
+Armazenar o token de acesso com segurança.
+Garantir a compatibilidade com o sistema de permissões existente.
+Registrar tentativas de login para auditoria.
+Critérios de Aceite:
+ O usuário deve conseguir se autenticar utilizando sua conta do Google ou Microsoft.
+ Após autenticação, o usuário deve ser redirecionado corretamente para o sistema.
+ O token de acesso deve ser armazenado de forma segura e expirar conforme as regras do provedor.
+ O login deve ser registrado no log do sistema.
+ O sistema deve impedir múltiplas autenticações simultâneas suspeitas.
+Dependências:
+Configuração dos credenciais dos provedores OAuth 2.0.
+Ajustes na API de autenticação para suportar OAuth.
+Prioridade: Alta
+Esforço Estimado: 5 pontos

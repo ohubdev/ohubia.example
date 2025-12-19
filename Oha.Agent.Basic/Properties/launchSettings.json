@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Oha.Agent.Basic": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "OPENAI_API_KEY": "<>",
+        "GROQ_API_KEY": "<>"
+      }
+    }
+  }
+}

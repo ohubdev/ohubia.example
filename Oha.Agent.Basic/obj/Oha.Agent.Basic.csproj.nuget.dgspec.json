@@ -1,0 +1,93 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Antônio Farias\\Downloads\\ohubia.example (1)\\Oha.Agent.Basic\\Oha.Agent.Basic.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Antônio Farias\\Downloads\\ohubia.example (1)\\Oha.Agent.Basic\\Oha.Agent.Basic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Antônio Farias\\Downloads\\ohubia.example (1)\\Oha.Agent.Basic\\Oha.Agent.Basic.csproj",
+        "projectName": "Oha.Agent.Basic",
+        "projectPath": "C:\\Users\\Antônio Farias\\Downloads\\ohubia.example (1)\\Oha.Agent.Basic\\Oha.Agent.Basic.csproj",
+        "packagesPath": "C:\\Users\\Antônio Farias\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Antônio Farias\\Downloads\\ohubia.example (1)\\Oha.Agent.Basic\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Antônio Farias\\Downloads\\ohubia.example (1)\\NuGet.Config",
+          "C:\\Users\\Antônio Farias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/ohubdev/Ohd.AI/_packaging/Ohd.Ai/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.21.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Ohd.AI.OpenAi.Agents": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[25.3.4.1904, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

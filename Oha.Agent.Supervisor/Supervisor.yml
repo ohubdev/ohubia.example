@@ -1,0 +1,32 @@
+ChatClients:
+  - Name: "gemini"
+    BaseUrl: "https://generativelanguage.googleapis.com/v1beta/openai"
+    ApiToken: "${{ ENV.GEMINI_API_KEY }}"
+  - Name: "openai"
+    BaseUrl: "https://api.openai.com/v1"
+    ApiToken: "${{ ENV.OPENAI_API_KEY }}"
+  - Name: "groq"
+    BaseUrl: "https://api.groq.com/openai/v1"
+    ApiToken: "${{ ENV.GROQ_API_KEY }}"
+
+Supervisor:
+  Name: "Manager"
+  ClientName: "gemini"
+  Model: "gemini-2.0-flash-exp"
+
+Workers:
+  - Name: "RecuperadorDeTexto"
+    ClientName: "openai"
+    Model: "gpt-4o-mini"
+    Role: "Text Extractor"
+    Description: |
+      Recupero conteúdo textual de arquivos fornecidos sem qualquer modificação, garantindo a extração precisa do texto em Base64.
+    Tools:
+      - Type: "FetchTextFileTool"
+
+  - Name: "GeradorOKR"
+    ClientName: "groq"
+    Model: "llama-3.3-70b-versatile"
+    Role: "OKR Generator"
+    Description: |
+      Transformo textos em OKRs bem definidos, analisando o conteúdo para extrair objetivos estratégicos e resultados mensuráveis.
